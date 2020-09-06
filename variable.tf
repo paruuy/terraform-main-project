@@ -18,7 +18,7 @@ variable "projeto" {
       app_name = "projeto1"
       instance_type = "t2.micro"
     },
-    projeto1 = {
+    projeto2 = {
       app_name = "projeto2"
       instance_type = "t2.micro"
     }

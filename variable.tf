@@ -9,3 +9,18 @@ variable "name" {
   description = "Testing interpolation (String Template)"
   default = ""
 }
+
+variable "projeto" {
+  type = map
+  description = "Map of project. terrafile iterates with these values and create the instances"
+  default = {
+    projeto1 = {
+      app_name = "projeto1"
+      instance_type = "t2.micro"
+    },
+    projeto1 = {
+      app_name = "projeto2"
+      instance_type = "t2.micro"
+    }
+  }
+}

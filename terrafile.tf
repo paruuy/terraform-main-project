@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 module "ec2" {
-  source        = "git@github.com:paruuy/terraform-remote-module.git" # Repo of terrafom module
+  source        = "git@github.com:paruuy/terraform-remote-module.git?ref=v0.1" # Repo of terrafom module, with tag v0.1
   app_name      = each.value.app_name
   instance_type = each.value.instance_type
   for_each      = var.projeto

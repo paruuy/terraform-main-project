@@ -6,9 +6,7 @@ provider "aws" {
 module "ec2" {
   source        = "git@github.com:paruuy/terraform-remote-module.git?ref=v0.2" # Repo of terrafom module, with tag v0.1
   app_name      = each.value.app_name
-  instance_type = each.value.instance_type
-  for_each      = var.projeto
-  
+  instance_type = each.value.instance_type  
 }
 
 output "ip_address_ec2" {

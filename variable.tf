@@ -9,5 +9,3 @@ variable "name" {
   description = "Testing interpolation (String Template)"
   default = ""
 }
-
-}
